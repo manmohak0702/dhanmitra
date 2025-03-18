@@ -68,13 +68,6 @@ Dhanmitra leverages the following technologies:
 
 Dhanmitra aims to democratize financial advice, making it accessible to everyone regardless of their wealth or financial knowledge. It's like having a financial advisor in your pocket, helping you make better financial decisions for your future.
 
-## Getting Started
-
-To explore Dhanmitra:
-
-1. **Visit the Website**: [Dhanmitra](https://www.dhanmitra.com)
-2. **Create an Account**: Sign up to personalize your experience.
-3. **Explore Features**: Navigate through fixed deposit comparisons and generate your investment roadmap.
 
 ## Contributing
 
