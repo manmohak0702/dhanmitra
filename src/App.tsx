@@ -1,6 +1,4 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { createClient } from '@supabase/supabase-js';
 import NavbarEnhanced from './components/NavbarEnhanced';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -53,12 +51,6 @@ import NPSPerformancePage from './pages/nps/performance';
 import { UserProvider } from './contexts/UserContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ToastProvider } from './components/Toast';
-
-// Initialize Supabase client
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
 
 function App() {
   console.log('App component rendering');
