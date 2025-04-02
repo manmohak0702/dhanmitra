@@ -1,6 +1,6 @@
-# DhanMitra - Financial Planning Platform
+# Dhanmitra - Financial Planning Platform
 
-DhanMitra is a comprehensive financial planning platform that provides users with tools and resources for managing their investments, retirement planning, and financial education. The platform offers detailed information and calculators for various financial products including National Pension System (NPS), Employee Provident Fund (EPF), and other investment options.
+Dhanmitra is a comprehensive financial planning platform that provides users with tools and resources for managing their investments, retirement planning, and financial education. The platform offers detailed information and calculators for various financial products including National Pension System (NPS), Employee Provident Fund (EPF), and other investment options.
 
 ## Features
 
