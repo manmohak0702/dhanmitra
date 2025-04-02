@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Info, FileText } from 'lucide-react';
 
 const EPFLandingPage: React.FC = () => {
   const epfTopics = [
@@ -75,32 +75,61 @@ const EPFLandingPage: React.FC = () => {
       title: 'PF Calculation Formula for Financial Planning',
       description: 'Learn about EPF calculation formulas and use our interactive calculator to estimate your retirement corpus based on salary and tenure.',
       link: '/epf/pf-calculation'
+    },
+    {
+      id: 'documentation',
+      title: 'Official Documentation',
+      description: 'Access official EPF acts, schemes, manuals, and administrative guidelines.',
+      link: '/epf/documentation'
     }
     // More EPF topics will be added here as they are created
   ];
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-6">Employee Provident Fund (EPF) Resources</h1>
-      
-      <p className="text-lg mb-8">
-        Welcome to our comprehensive guide on Employee Provident Fund (EPF). Here you'll find detailed information
-        about various EPF processes, forms, and procedures to help you manage your provident fund efficiently.
-      </p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {epfTopics.map((topic) => (
-          <div key={topic.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <h2 className="text-xl font-semibold mb-3">{topic.title}</h2>
-            <p className="text-gray-600 mb-4">{topic.description}</p>
-            <Link 
-              to={topic.link} 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
-            >
-              Read more <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 py-8">
+        <Link
+          to="/"
+          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Home
+        </Link>
+
+        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">Employees' Provident Fund (EPF)</h1>
+          
+          <div className="prose max-w-none">
+            <p className="text-gray-600 mb-6">
+              The Employees' Provident Fund (EPF) is a retirement benefits scheme for employees in India.
+              It is managed by the Employees' Provident Fund Organisation (EPFO) under the Ministry of Labour and Employment.
+            </p>
+
+            <div className="bg-blue-50 p-4 rounded-lg mb-8">
+              <p className="text-gray-700">
+                EPF is a mandatory savings scheme for employees in India, where both the employee and employer contribute
+                a portion of the employee's salary. The accumulated amount can be withdrawn at retirement or under
+                specific circumstances.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {epfTopics.map((topic) => (
+                <Link
+                  key={topic.id}
+                  to={topic.link}
+                  className="block p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                >
+                  <div className="flex justify-between items-start mb-2">
+                    <h2 className="text-xl font-semibold text-gray-900">{topic.title}</h2>
+                    <ArrowRight className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  </div>
+                  <p className="text-gray-600">{topic.description}</p>
+                </Link>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );

@@ -36,6 +36,20 @@ import EPFForm10CPage from './pages/epf/form-10c';
 import EPFPassbookDownloadPage from './pages/epf/passbook-download';
 import EPFClaimStatusPage from './pages/epf/claim-status';
 import PFCalculationPage from './pages/epf/pf-calculation';
+import EPFDocumentationPage from './pages/epf/documentation';
+// NPS Pages
+import NPSLandingPage from './pages/nps';
+import NPSOverviewPage from './pages/nps/overview';
+import NPSAccountTypesPage from './pages/nps/account-types';
+import NPSTaxBenefitsPage from './pages/nps/tax-benefits';
+import NPSRegistrationPage from './pages/nps/online-registration';
+import NPSInvestmentOptionsPage from './pages/nps/investment-options';
+import NPSWithdrawalRulesPage from './pages/nps/withdrawal-rules';
+import NPSCalculatorPage from './pages/nps/calculator';
+import NPSCorporateModelPage from './pages/nps/corporate-model';
+import NPSPranCardPage from './pages/nps/pran-card';
+import NPSExitOptionsPage from './pages/nps/exit-options';
+import NPSPerformancePage from './pages/nps/performance';
 import { UserProvider } from './contexts/UserContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ToastProvider } from './components/Toast';
@@ -47,6 +61,8 @@ const supabase = createClient(
 );
 
 function App() {
+  console.log('App component rendering');
+  
   return (
     <ErrorBoundary>
       <ToastProvider>
@@ -89,6 +105,21 @@ function App() {
                   <Route path="/epf/passbook-download" element={<EPFPassbookDownloadPage />} />
                   <Route path="/epf/claim-status" element={<EPFClaimStatusPage />} />
                   <Route path="/epf/pf-calculation" element={<PFCalculationPage />} />
+                  <Route path="/epf/documentation" element={<EPFDocumentationPage />} />
+                  
+                  {/* NPS Routes */}
+                  <Route path="/nps" element={<NPSLandingPage />} />
+                  <Route path="/nps/overview" element={<NPSOverviewPage />} />
+                  <Route path="/nps/account-types" element={<NPSAccountTypesPage />} />
+                  <Route path="/nps/tax-benefits" element={<NPSTaxBenefitsPage />} />
+                  <Route path="/nps/online-registration" element={<NPSRegistrationPage />} />
+                  <Route path="/nps/investment-options" element={<NPSInvestmentOptionsPage />} />
+                  <Route path="/nps/withdrawal-rules" element={<NPSWithdrawalRulesPage />} />
+                  <Route path="/nps/calculator" element={<NPSCalculatorPage />} />
+                  <Route path="/nps/corporate-model" element={<NPSCorporateModelPage />} />
+                  <Route path="/nps/pran-card" element={<NPSPranCardPage />} />
+                  <Route path="/nps/exit-options" element={<NPSExitOptionsPage />} />
+                  <Route path="/nps/performance" element={<NPSPerformancePage />} />
                 </Routes>
               </main>
               <Footer />

@@ -78,6 +78,12 @@ const NavbarEnhanced = () => {
                   EPF Resources
                 </Link>
                 <Link 
+                  to="/nps"
+                  className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                >
+                  NPS Resources
+                </Link>
+                <Link 
                   to="/saved-roadmaps"
                   className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
                 >
@@ -132,10 +138,15 @@ const NavbarEnhanced = () => {
               <>
                 <Link 
                   to="/epf"
-                  className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex items-center"
+                  className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
                 >
-                  <Building className="h-4 w-4 mr-1" />
-                  <span>EPF Resources</span>
+                  EPF Resources
+                </Link>
+                <Link 
+                  to="/nps"
+                  className="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                >
+                  NPS Resources
                 </Link>
                 <Link 
                   to="/faq"
@@ -220,6 +231,13 @@ const NavbarEnhanced = () => {
                   <span>EPF Resources</span>
                 </Link>
                 <Link 
+                  to="/nps"
+                  className="block py-2 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex items-center"
+                >
+                  <Building className="h-4 w-4 mr-2" />
+                  <span>NPS Resources</span>
+                </Link>
+                <Link 
                   to="/saved-roadmaps"
                   className="block py-2 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
                 >
@@ -273,6 +291,13 @@ const NavbarEnhanced = () => {
                 >
                   <Building className="h-4 w-4 mr-2" />
                   <span>EPF Resources</span>
+                </Link>
+                <Link 
+                  to="/nps"
+                  className="block py-2 text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors flex items-center"
+                >
+                  <Building className="h-4 w-4 mr-2" />
+                  <span>NPS Resources</span>
                 </Link>
                 <Link 
                   to="/faq"
