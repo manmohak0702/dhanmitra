@@ -17,7 +17,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://10.7.142.106:3000', 'http://127.0.0.1:3000'],
+  origin: ['http://localhost:3000', "https://dhanmitra.vercel.app/", 'http://10.7.142.106:3000', 'http://127.0.0.1:3000', "https://dhanmitra.onrender.com"],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],
   credentials: true,

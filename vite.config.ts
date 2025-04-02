@@ -13,7 +13,7 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:5001',
+        target: 'https://dhanmitra.onrender.com',
         changeOrigin: true,
         secure: false
       }
